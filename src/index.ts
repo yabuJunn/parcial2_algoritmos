@@ -17,16 +17,20 @@ class AppContainer extends HTMLElement {
         linkStylesheet.setAttribute("href", "/src/index.css")
         this.shadowRoot?.appendChild(linkStylesheet)
 
+        const title = this.ownerDocument.createElement("h1")
+        title.innerText = "CATS GENERATOR"
+        this.shadowRoot?.appendChild(title)
+
         const cardContainer = this.ownerDocument.createElement('div');
         cardContainer.setAttribute("id", "cardContainer")
         this.shadowRoot?.appendChild(cardContainer);
 
         const img = this.ownerDocument.createElement("img")
-        img.setAttribute("src", "https://cataas.com/cat/says/prueba%20prueba")
+        img.setAttribute("src", "https://cataas.com/cat/says/Press the button!")
         cardContainer.appendChild(img)
 
         const text = this.ownerDocument.createElement("p")
-        text.innerText = "Cats are subject to gum disease and to dental caries. They should have their teeth cleaned by the vet or the cat dentist once a year."
+        text.innerText = "Press the button to get a fact!"
         cardContainer.appendChild(text)
 
         const button = this.ownerDocument.createElement("button")
