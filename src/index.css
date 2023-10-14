@@ -1,0 +1,13 @@
+#cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    background-color: aqua;
+    padding: 30px;
+}
+
+#cardContainer img {
+    max-width: 100%;
+}
